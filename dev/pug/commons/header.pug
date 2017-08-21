@@ -2,16 +2,17 @@ header
     .container
         .header-nav
             .sandwich
-                span.sandwich-line.sandwich-line--logo
+                span.sandwich-line.sandwich-line--top
                 span.sandwich-line.sandwich-line--middle
                 span.sandwich-line.sandwich-line--bottom
-            span Меню
-            .header-about
-                span.header-company__name Группа компаний Emerald
-                span.header-company__descr Организация свадебных торжеств
-            .logo
-                img(src="static/img/general/logo.png")
-            .header-phone
-                a(href="tel=7495195795") 7 (495) 195-57-22
-                a(href="tel=7495795") 7 (495) 195-10-37
-            a(href="javascript:void(0);") Заказать звонок
+            span.header-nav__title Меню
+            include menu
+        .header-about
+            h1.header-company__name Группа компаний Emerald
+            span.header-company__descr Организация свадебных торжеств
+        .logo.header-logo
+            img(src="static/img/general/logo.png" width=140 alt="Логотип")
+        .header-phone
+            a(href="tel=7495195795") 7 (495) 195-57-22
+            a(href="tel=7495795") 7 (495) 195-10-37
+        a(href="javascript:void(0);").g-btn Заказать звонок
