@@ -2916,7 +2916,7 @@ textarea {
 }
 section {
   position: relative;
-  margin-bottom: 20px;
+  padding: 70px 0;
 }
 input,
 select,
@@ -3013,6 +3013,32 @@ button {
   background-color: #fff;
   color: #007558;
 }
+.g-section-title {
+  margin-bottom: 30px;
+  font-size: 42px;
+  text-align: center;
+  color: #007558;
+}
+.g-section-title.g-section-title--white {
+  color: #fff;
+}
+.instagram-text {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  color: #007558;
+}
+.instagram-text:before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 15px;
+  width: 35px;
+  height: 35px;
+  background: url("../img/svg/instagram.svg") 0 0 no-repeat;
+}
 header {
   background: #007558 center no-repeat;
   height: 70px;
@@ -3105,7 +3131,7 @@ header .container {
       justify-content: center;
   -ms-flex-align: end;
       align-items: flex-end;
-  padding: 60px 0;
+  height: 550px;
 }
 .banner-text {
   text-align: center;
@@ -3113,4 +3139,27 @@ header .container {
   line-height: 1.4;
   font-weight: bold;
   color: #fff;
+}
+.about-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about-content .about-video,
+.about-content .about-text {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  width: 49%;
+}
+.about-text {
+  text-align: center;
+}
+.about-text p {
+  margin-bottom: 25px;
+  color: #007558;
+  line-height: 1.1;
+  text-align: left;
 }
